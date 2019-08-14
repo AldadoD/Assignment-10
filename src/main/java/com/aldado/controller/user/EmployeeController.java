@@ -23,7 +23,7 @@ public class EmployeeController {
     private RaceService raceService = RaceServiceImpl.getService();
     private GenderService genderService = GenderServiceImpl.getService();
 
-    public void create(String firstName, String lastName, int genderId, int raceId) {
+    public void create(String firstName, String lastName, String id, String genderId) {
 
         Employee employee = EmployeeFactory.getEmployee(firstName, lastName);
         employeeService.create("Aldado", employee);

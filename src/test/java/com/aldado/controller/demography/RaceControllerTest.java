@@ -1,5 +1,6 @@
 package com.aldado.controller.demography;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,5 +18,6 @@ public class RaceControllerTest {
     public void create() {
 
         raceController.create("");
+        Assert.assertNotNull(raceController);
     }
 }

@@ -1,5 +1,6 @@
 package com.aldado.controller.demography;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,5 +17,6 @@ public class GenderControllerTest {
     public void create() {
 
         genderController.create("");
+        Assert.assertNotNull(genderController);
     }
 }
